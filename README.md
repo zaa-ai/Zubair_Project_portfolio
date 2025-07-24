@@ -89,7 +89,7 @@ I’m a research-driven engineer with hands-on experience in embedded systems, T
 
 ---
 
-### **4. Automated Regression-Test Log Clustering & Binning**  
+### **4. Automated Regression-Test Log Clustering & Binning(Machine Learning)**  
 **Stack:** Python · pandas · regex · TF-IDF · TruncatedSVD · HDBSCAN · KMeans
 
 - **Objective:**  
