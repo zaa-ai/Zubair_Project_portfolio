@@ -2,9 +2,6 @@
 """
 Spyder Editor
 
-This is a temporary script file.
-
-author: thomas
 """
 
 #hints: use training data with parameters from 5-20, do not sample from non-uniform distributions for a, values for a close to 0 changes solution a lot

@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul  6 16:58:43 2023
 
-@author: Anil
-"""
 
 import matplotlib as mp
 import cvxpy as cp
