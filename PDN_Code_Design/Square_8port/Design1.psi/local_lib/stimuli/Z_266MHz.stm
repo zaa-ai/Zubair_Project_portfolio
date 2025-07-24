@@ -1,0 +1,20 @@
+<!DOCTYPE DigitalStimulus>
+<DigitalStimulus>
+ <SimulationTime Value="1.5e-008" />
+ <BitPattern Value="Periodic" />
+ <BitOrder Value="0" />
+ <Encoding_8b_10b Value="" />
+ <ClockFrequency Value="266000000" />
+ <InitialDelay Value="0" />
+ <DutyCycle Value="0.5" />
+ <DataInitialLevel Value="Inverted first bit" />
+ <DataSequence Value="10" />
+ <DataTriggerEdge Value="both" />
+ <EnableSequence Value="1" />
+ <EnableTriggerEdge Value="both" />
+ <Jitter Value="0" />
+ <JitterSeed Value="5" />
+ <JitterAmount Value="5" />
+ <JitterDistribution Value="Uniform" />
+</DigitalStimulus>
+

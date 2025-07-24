@@ -1,0 +1,5 @@
+The three most frequent states and their maximum rewards are:
+State 1: (0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0) appears 7 times with max reward: 7.515706806282722
+State 2: (0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0) appears 6 times with max reward: 7.510471204188482
+State 3: (0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0) appears 6 times with max reward: 7.515706806282722
+The state with the best reward is (1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0) with a reward of 9.333333333333334 and appears 1 times.

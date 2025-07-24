@@ -1,0 +1,93 @@
+###############################################################################
+#
+#		Zuken GmbH, Simulation Library Setup File
+#
+#       Filename: p_setup.hrt
+#        Version: 2.0
+#      Last Save: Tue Nov 27 14:52:03 2012
+#
+###############################################################################
+#
+# PARTTYPE Settings
+#
+PARTTYPE!CONNECTOR
+	DSG["Connector"]
+	FBM["Z_CONN_IDEAL_xle.mac"]
+	SYN[""];
+#
+# TECHNOLOGY Settings
+#
+TECHNOLOGY!UK
+	DSG["Unknown (based on AHCT)"]
+	PAR["COref"]("1e-015"),["Vdiff"]("0.2"),
+		["CPD"]("30E-12"),["ROref"]("1000.0"),
+		["VICC"]("3.3"),["VIHmin"]("2"),
+		["VILmax"]("0.8"),["VISS"]("0"),
+		["VIT"]("1.5"),["VOCC"]("3.3"),
+		["VOHmax"]("3.3"),["VOHmin"]("2.4"),
+		["VOLmax"](".44"),["VOLmin"]("0"),
+		["VOref"]("0"),["VOSS"]("0")
+	SIGBUS["FBMI"]("AHCT_042_S0_in.mac"),
+		["FBMO"]("AHCT_042_S0_out.mac"),["FBMT"]("AHCT_027_S0_tri.mac"),
+		["FWmax"]("75E6"),["FWmin"]("10E6"),
+		["FWtyp"]("25E6"),["IOHmax"]("-.004"),
+		["IOLmax"](".004"),["TITFmax"]("20E-9"),
+		["TITRmax"]("20E-9"),["TOmDF"]("0"),
+		["TOmDR"]("0"),["VImDF"]("1.5"),
+		["VImDR"]("1.5"),["VOmDF"]("1.65"),
+		["VOmDR"]("1.65")
+	SIGCLK["FBMI"]("AHCT_042_S0_in.mac"),
+		["FBMO"]("AHCT_042_S0_out.mac"),["FBMT"]("AHCT_027_S0_tri.mac"),
+		["FWmax"]("80E6"),["FWmin"]("15E6"),
+		["FWtyp"]("30E6"),["IOHmax"]("-.004"),
+		["IOLmax"](".004"),["TITFmax"]("20E-9"),
+		["TITRmax"]("20E-9"),["TOmDF"]("0"),
+		["TOmDR"]("0"),["VImDF"]("1.5"),
+		["VImDR"]("1.5"),["VOmDF"]("1.65"),
+		["VOmDR"]("1.65")
+	SIGCTRL["FBMI"]("AHCT_000_S0_in.mac"),
+		["FBMO"]("AHCT_042_S0_out.mac"),["FBMT"]("AHCT_027_S0_tri.mac"),
+		["FWmax"]("60E6"),["FWmin"]("8E6"),
+		["FWtyp"]("15E6"),["IOHmax"]("-.004"),
+		["IOLmax"](".004"),["TITFmax"]("20E-9"),
+		["TITRmax"]("20E-9"),["TOmDF"]("0"),
+		["TOmDR"]("0"),["VImDF"]("1.5"),
+		["VImDR"]("1.5"),["VOmDF"]("1.65"),
+		["VOmDR"]("1.65")
+	SIGDATA["FBMI"]("AHCT_000_S0_in.mac"),
+		["FBMO"]("AHCT_042_S0_out.mac"),["FBMT"]("AHCT_027_S0_tri.mac"),
+		["FWmax"]("60E6"),["FWmin"]("8E6"),
+		["FWtyp"]("15E6"),["IOHmax"]("-.004"),
+		["IOLmax"](".004"),["TITFmax"]("20E-9"),
+		["TITRmax"]("20E-9"),["TOmDF"]("0"),
+		["TOmDR"]("0"),["VImDF"]("1.5"),
+		["VImDR"]("1.5"),["VOmDF"]("1.65"),
+		["VOmDR"]("1.65")
+	SIGDFT["SIGDFT"]("SIGUK")
+	SIGUK["FBMI"]("Z_BUFF33_IN_typ_in.mac"),
+		["FBMO"]("Z_BUFF33_08_typ_out.mac"),["FBMT"]("Z_BUFF33_08_typ_tri.mac"),
+		["FWmax"]("75E6"),["FWmin"]("10E6"),
+		["FWtyp"]("25E6"),["IOHmax"]("-.004"),
+		["IOLmax"](".004"),["TITFmax"]("20E-9"),
+		["TITRmax"]("20E-9"),["TOmDF"]("1e-009"),
+		["TOmDR"]("6.7e-010"),["VImDF"]("1.5"),
+		["VImDR"]("1.5"),["VOmDF"]("1.65"),
+		["VOmDR"]("1.65")
+	SYN["UNKNOWN"];
+#
+# VENDOR Settings
+#
+VENDOR!UNKNOWN
+	DSG["UNKNOWN"]
+	SYN["NO","NONE","_","__"];
+VENDOR!ZUKEN
+	DSG["Zuken"]
+	SYN["ZUKEN_INC.","ZUKEN_INC","ZUKEN_LTD.","ZUKEN_LTD"];
+#
+# MISC Settings
+#
+MISC!SETTINGS
+	DEH["PREFIX"]
+	SRC["User"]
+	IBISMDLAUTOREN["FR-"]
+	IBISPKGAUTOREN["FR-"];

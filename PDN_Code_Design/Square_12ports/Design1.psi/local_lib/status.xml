@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<local_lib>
+
+  <status>
+    <refLibSwitch>
+      <param value="local"/>
+    </refLibSwitch>
+    <lastUpdate>
+      <param value="2024-02-13T17:48:34+01:00"/>
+    </lastUpdate>
+  </status>
+
+</local_lib>

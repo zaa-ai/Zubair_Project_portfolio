@@ -1,0 +1,5 @@
+training complete in 138445.53084349632 second
+training complete in 2307.4255140582723 minutes
+training complete in 38.4570919009712 hours
+The most frequent state is (1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0) which appears 4 times.
+The state with the best reward is (0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1) with a reward of 9.333333333333334.

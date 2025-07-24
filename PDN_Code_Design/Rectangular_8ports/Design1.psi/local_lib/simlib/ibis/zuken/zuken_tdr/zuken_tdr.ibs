@@ -1,0 +1,846 @@
+|#############################################################################
+|
+[IBIS Ver]       2.1
+[File Name]      zuken_tdr.ibs
+[File Rev]       1.3
+[Date]           2018-05-11
+[Source]         Zuken GmbH
+                 EMC Technology Center
+                 Am Hoppenhof 32a
+                 D-33104 Paderborn, Germany
+|
+[Notes]          handcrafted for test purposes;
+                 timing information in model name indicates
+                 the 0-100 % rise/fall times of the waveforms;
+                 rev 1.1: Vmeas changed from 0.25 V to 0.125 V;
+                 rev 1.2: cmp/mdl-names changed from ztdr* to Z_TDR*;
+                 rev 1.3: added 10 ps model;
+|
+[Component]      Z_TEST_TDR
+[Manufacturer]   Zuken
+|
+[Package]
+|       typ   min   max
+R_pkg   0.0   NA    NA
+L_pkg   0.0   NA    NA
+C_pkg   0.0   NA    NA
+|
+[Pin]   signal_name   model_name
+1        tdr10         Z_TDR_10ps
+2        tdr25         Z_TDR_25ps
+3        tdr50         Z_TDR_50ps
+4        tdr75         Z_TDR_75ps
+5        tdr100        Z_TDR_100ps
+6        tdr200        Z_TDR_200ps
+7        tdr500        Z_TDR_500ps
+8        tdr1000       Z_TDR_1000ps
+|
+|***************************************************************************
+|
+|                           Model Z_TDR_10ps  OUTPUT
+|
+|***************************************************************************
+[Model]     Z_TDR_10ps
+Model_type  Output
+Polarity    Non-Inverting
+Vmeas =0.125V
+Vref =0V
+Rref =50
+Cref =0pF
+|
+| variable                 typ                 min                 max
+C_comp                     0.0                 NA                  NA
+[Temperature Range]         50                 NA                  NA
+[Voltage range]            0.5                 NA                  NA
+|
+[Pullup]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V     0.01      NA        NA
+            1.0V    -0.02      NA        NA
+|
+[Pulldown]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V   -0.01      NA        NA
+            1.0V    0.02      NA        NA
+|
+[GND Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[POWER Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[ramp]
+| variable      typ         min       max
+dV/dt_r         0.15/6ps    NA        NA
+dV/dt_f         0.15/6ps    NA        NA
+|
+[Rising Waveform]
+R_fixture=      50.0000
+V_fixture=      0.0
+V_fixture_min=  0.0
+V_fixture_max=  0.0
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.000000000    NA    NA
+3.043622E-13    0.000453741    NA    NA
+6.058624E-13    0.002234500    NA    NA
+9.601559E-13    0.007172840    NA    NA
+1.334650E-12    0.015520400    NA    NA
+1.775224E-12    0.027651800    NA    NA
+2.280698E-12    0.042657500    NA    NA
+2.870484E-12    0.060492800    NA    NA
+3.695641E-12    0.085526300    NA    NA
+4.600000E-12    0.112894834    NA    NA
+5.000000E-12    0.125000000    NA    NA
+5.400000E-12    0.137105166    NA    NA
+6.304359E-12    0.164473700    NA    NA
+7.129516E-12    0.189507200    NA    NA
+7.719302E-12    0.207342500    NA    NA
+8.224776E-12    0.222348200    NA    NA
+8.665350E-12    0.234479600    NA    NA
+9.039844E-12    0.242827160    NA    NA
+9.394138E-12    0.247765500    NA    NA
+9.695638E-12    0.249546259    NA    NA
+1.000000E-11    0.250000000    NA    NA
+|
+[Falling Waveform]
+R_fixture=      50.0000
+V_fixture=      0.5
+V_fixture_min=  0.5
+V_fixture_max=  0.5
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.500000000    NA    NA
+3.043622E-13    0.499546000    NA    NA
+6.058624E-13    0.497766000    NA    NA
+9.601559E-13    0.492827000    NA    NA
+1.334650E-12    0.484480000    NA    NA
+1.775224E-12    0.472348000    NA    NA
+2.280698E-12    0.457343000    NA    NA
+2.870484E-12    0.439507000    NA    NA
+3.695641E-12    0.414474000    NA    NA
+4.600000E-12    0.387105000    NA    NA
+5.000000E-12    0.375000000    NA    NA
+5.400000E-12    0.362895000    NA    NA
+6.304359E-12    0.335526000    NA    NA
+7.129516E-12    0.310493000    NA    NA
+7.719302E-12    0.292657000    NA    NA
+8.224776E-12    0.277652000    NA    NA
+8.665350E-12    0.265520000    NA    NA
+9.039844E-12    0.257173000    NA    NA
+9.394138E-12    0.252234000    NA    NA
+9.695638E-12    0.250454000    NA    NA
+1.000000E-11    0.250000000    NA    NA
+|
+|***************************************************************************
+|
+|                           Model Z_TDR_25ps  OUTPUT
+|
+|***************************************************************************
+[Model]     Z_TDR_25ps
+Model_type  Output
+Polarity    Non-Inverting
+Vmeas =0.125V
+Vref =0V
+Rref =50
+Cref =0pF
+|
+| variable                 typ                 min                 max
+C_comp                     0.0                 NA                  NA
+[Temperature Range]         50                 NA                  NA
+[Voltage range]            0.5                 NA                  NA
+|
+[Pullup]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V     0.01      NA        NA
+            1.0V    -0.02      NA        NA
+|
+[Pulldown]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V   -0.01      NA        NA
+            1.0V    0.02      NA        NA
+|
+[GND Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[POWER Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[ramp]
+| variable      typ         min       max
+dV/dt_r         0.15/15ps    NA        NA
+dV/dt_f         0.15/15ps    NA        NA
+|
+[Rising Waveform]
+R_fixture=      50.0000
+V_fixture=      0.0
+V_fixture_min=  0.0
+V_fixture_max=  0.0
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.000000000    NA    NA
+7.609056E-13    0.000453741    NA    NA
+1.514656E-12    0.002234500    NA    NA
+2.400390E-12    0.007172840    NA    NA
+3.336625E-12    0.015520400    NA    NA
+4.438060E-12    0.027651800    NA    NA
+5.701746E-12    0.042657500    NA    NA
+7.176211E-12    0.060492800    NA    NA
+9.239103E-12    0.085526300    NA    NA
+1.150000E-11    0.112894834    NA    NA
+1.250000E-11    0.125000000    NA    NA
+1.350000E-11    0.137105166    NA    NA
+1.576090E-11    0.164473700    NA    NA
+1.782379E-11    0.189507200    NA    NA
+1.929825E-11    0.207342500    NA    NA
+2.056194E-11    0.222348200    NA    NA
+2.166338E-11    0.234479600    NA    NA
+2.259961E-11    0.242827160    NA    NA
+2.348534E-11    0.247765500    NA    NA
+2.423909E-11    0.249546259    NA    NA
+2.500000E-11    0.250000000    NA    NA
+|
+[Falling Waveform]
+R_fixture=      50.0000
+V_fixture=      0.5
+V_fixture_min=  0.5
+V_fixture_max=  0.5
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.500000000    NA    NA
+7.609056E-13    0.499546000    NA    NA
+1.514656E-12    0.497766000    NA    NA
+2.400390E-12    0.492827000    NA    NA
+3.336625E-12    0.484480000    NA    NA
+4.438060E-12    0.472348000    NA    NA
+5.701746E-12    0.457343000    NA    NA
+7.176211E-12    0.439507000    NA    NA
+9.239103E-12    0.414474000    NA    NA
+1.150000E-11    0.387105000    NA    NA
+1.250000E-11    0.375000000    NA    NA
+1.350000E-11    0.362895000    NA    NA
+1.576090E-11    0.335526000    NA    NA
+1.782379E-11    0.310493000    NA    NA
+1.929825E-11    0.292657000    NA    NA
+2.056194E-11    0.277652000    NA    NA
+2.166338E-11    0.265520000    NA    NA
+2.259961E-11    0.257173000    NA    NA
+2.348534E-11    0.252234000    NA    NA
+2.423909E-11    0.250454000    NA    NA
+2.500000E-11    0.250000000    NA    NA
+|
+|***************************************************************************
+|
+|                           Model Z_TDR_50ps  OUTPUT
+|
+|***************************************************************************
+[Model]     Z_TDR_50ps
+Model_type  Output
+Polarity    Non-Inverting
+Vmeas =0.125V
+Vref =0V
+Rref =50
+Cref =0pF
+|
+| variable                 typ                 min                 max
+C_comp                     0.0                 NA                  NA
+[Temperature Range]         50                 NA                  NA
+[Voltage range]            0.5                 NA                  NA
+|
+[Pullup]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V     0.01      NA        NA
+            1.0V    -0.02      NA        NA
+|
+[Pulldown]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V   -0.01      NA        NA
+            1.0V    0.02      NA        NA
+|
+[GND Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[POWER Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[ramp]
+| variable      typ         min       max
+dV/dt_r         0.15/30ps    NA        NA
+dV/dt_f         0.15/30ps    NA        NA
+|
+[Rising Waveform]
+R_fixture=      50.0000
+V_fixture=      0.0
+V_fixture_min=  0.0
+V_fixture_max=  0.0
+|time             V(typ)              V(min)              V(max)
+0.000000E+00    0.000000000    NA    NA
+1.521811E-12    0.000453741    NA    NA
+3.029312E-12    0.002234500    NA    NA
+4.800779E-12    0.007172840    NA    NA
+6.673249E-12    0.015520400    NA    NA
+8.876119E-12    0.027651800    NA    NA
+1.140349E-11    0.042657500    NA    NA
+1.435242E-11    0.060492800    NA    NA
+1.847821E-11    0.085526300    NA    NA
+2.300000E-11    0.112894834    NA    NA
+2.500000E-11    0.125000000    NA    NA
+2.700000E-11    0.137105166    NA    NA
+3.152179E-11    0.164473700    NA    NA
+3.564758E-11    0.189507200    NA    NA
+3.859651E-11    0.207342500    NA    NA
+4.112388E-11    0.222348200    NA    NA
+4.332675E-11    0.234479600    NA    NA
+4.519922E-11    0.242827160    NA    NA
+4.697069E-11    0.247765500    NA    NA
+4.847819E-11    0.249546259    NA    NA
+5.000000E-11    0.250000000    NA    NA
+|
+[Falling Waveform]
+R_fixture=      50.0000
+V_fixture=      0.5
+V_fixture_min=  0.5
+V_fixture_max=  0.5
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.500000000    NA    NA
+1.521811E-12    0.499546000    NA    NA
+3.029312E-12    0.497766000    NA    NA
+4.800779E-12    0.492827000    NA    NA
+6.673249E-12    0.484480000    NA    NA
+8.876119E-12    0.472348000    NA    NA
+1.140349E-11    0.457343000    NA    NA
+1.435242E-11    0.439507000    NA    NA
+1.847821E-11    0.414474000    NA    NA
+2.300000E-11    0.387105000    NA    NA
+2.500000E-11    0.375000000    NA    NA
+2.700000E-11    0.362895000    NA    NA
+3.152179E-11    0.335526000    NA    NA
+3.564758E-11    0.310493000    NA    NA
+3.859651E-11    0.292657000    NA    NA
+4.112388E-11    0.277652000    NA    NA
+4.332675E-11    0.265520000    NA    NA
+4.519922E-11    0.257173000    NA    NA
+4.697069E-11    0.252234000    NA    NA
+4.847819E-11    0.250454000    NA    NA
+5.000000E-11    0.250000000    NA    NA
+|
+|***************************************************************************
+|
+|                           Model Z_TDR_75ps  OUTPUT
+|
+|***************************************************************************
+[Model]     Z_TDR_75ps
+Model_type  Output
+Polarity    Non-Inverting
+Vmeas =0.125V
+Vref =0V
+Rref =50
+Cref =0pF
+|
+| variable                 typ                 min                 max
+C_comp                     0.0                 NA                  NA
+[Temperature Range]         50                 NA                  NA
+[Voltage range]            0.5                 NA                  NA
+|
+[Pullup]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V     0.01      NA        NA
+            1.0V    -0.02      NA        NA
+|
+[Pulldown]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V   -0.01      NA        NA
+            1.0V    0.02      NA        NA
+|
+[GND Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[POWER Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[ramp]
+| variable      typ         min       max
+dV/dt_r         0.15/45ps    NA        NA
+dV/dt_f         0.15/45ps    NA        NA
+|
+[Rising Waveform]
+R_fixture=      50.0000
+V_fixture=      0.0
+V_fixture_min=  0.0
+V_fixture_max=  0.0
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.000000000    NA    NA
+2.282717E-12    0.000453741    NA    NA
+4.543968E-12    0.002234500    NA    NA
+7.201169E-12    0.007172840    NA    NA
+1.000987E-11    0.015520400    NA    NA
+1.331418E-11    0.027651800    NA    NA
+1.710524E-11    0.042657500    NA    NA
+2.152863E-11    0.060492800    NA    NA
+2.771731E-11    0.085526300    NA    NA
+3.450000E-11    0.112894834    NA    NA
+3.750000E-11    0.125000000    NA    NA
+4.050000E-11    0.137105166    NA    NA
+4.728269E-11    0.164473700    NA    NA
+5.347137E-11    0.189507200    NA    NA
+5.789476E-11    0.207342500    NA    NA
+6.168582E-11    0.222348200    NA    NA
+6.499013E-11    0.234479600    NA    NA
+6.779883E-11    0.242827160    NA    NA
+7.045603E-11    0.247765500    NA    NA
+7.271728E-11    0.249546259    NA    NA
+7.500000E-11    0.250000000    NA    NA
+|
+[Falling Waveform]
+R_fixture=      50.0000
+V_fixture=      0.5
+V_fixture_min=  0.5
+V_fixture_max=  0.5
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.500000000    NA    NA
+2.282717E-12    0.499546000    NA    NA
+4.543968E-12    0.497766000    NA    NA
+7.201169E-12    0.492827000    NA    NA
+1.000987E-11    0.484480000    NA    NA
+1.331418E-11    0.472348000    NA    NA
+1.710524E-11    0.457343000    NA    NA
+2.152863E-11    0.439507000    NA    NA
+2.771731E-11    0.414474000    NA    NA
+3.450000E-11    0.387105000    NA    NA
+3.750000E-11    0.375000000    NA    NA
+4.050000E-11    0.362895000    NA    NA
+4.728269E-11    0.335526000    NA    NA
+5.347137E-11    0.310493000    NA    NA
+5.789476E-11    0.292657000    NA    NA
+6.168582E-11    0.277652000    NA    NA
+6.499013E-11    0.265520000    NA    NA
+6.779883E-11    0.257173000    NA    NA
+7.045603E-11    0.252234000    NA    NA
+7.271728E-11    0.250454000    NA    NA
+7.500000E-11    0.250000000    NA    NA
+|
+|***************************************************************************
+|
+|                           Model Z_TDR_100ps  OUTPUT
+|
+|***************************************************************************
+[Model]     Z_TDR_100ps
+Model_type  Output
+Polarity    Non-Inverting
+Vmeas =0.125V
+Vref =0V
+Rref =50
+Cref =0pF
+|
+| variable                 typ                 min                 max
+C_comp                     0.0                 NA                  NA
+[Temperature Range]         50                 NA                  NA
+[Voltage range]            0.5                 NA                  NA
+|
+[Pullup]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V     0.01      NA        NA
+            1.0V    -0.02      NA        NA
+|
+[Pulldown]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V   -0.01      NA        NA
+            1.0V    0.02      NA        NA
+|
+[GND Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[POWER Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[ramp]
+| variable      typ         min       max
+dV/dt_r         0.15/60ps    NA        NA
+dV/dt_f         0.15/60ps    NA        NA
+|
+[Rising Waveform]
+R_fixture=      50.0000
+V_fixture=      0.0
+V_fixture_min=  0.0
+V_fixture_max=  0.0
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.000000000    NA    NA
+3.043622E-12    0.000453741    NA    NA
+6.058624E-12    0.002234500    NA    NA
+9.601559E-12    0.007172840    NA    NA
+1.334650E-11    0.015520400    NA    NA
+1.775224E-11    0.027651800    NA    NA
+2.280698E-11    0.042657500    NA    NA
+2.870484E-11    0.060492800    NA    NA
+3.695641E-11    0.085526300    NA    NA
+4.600000E-11    0.112894834    NA    NA
+5.000000E-11    0.125000000    NA    NA
+5.400000E-11    0.137105166    NA    NA
+6.304359E-11    0.164473700    NA    NA
+7.129516E-11    0.189507200    NA    NA
+7.719302E-11    0.207342500    NA    NA
+8.224776E-11    0.222348200    NA    NA
+8.665350E-11    0.234479600    NA    NA
+9.039844E-11    0.242827160    NA    NA
+9.394138E-11    0.247765500    NA    NA
+9.695638E-11    0.249546259    NA    NA
+1.000000E-10    0.250000000    NA    NA
+|
+[Falling Waveform]
+R_fixture=      50.0000
+V_fixture=      0.5
+V_fixture_min=  0.5
+V_fixture_max=  0.5
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.500000000    NA    NA
+3.043622E-12    0.499546000    NA    NA
+6.058624E-12    0.497766000    NA    NA
+9.601559E-12    0.492827000    NA    NA
+1.334650E-11    0.484480000    NA    NA
+1.775224E-11    0.472348000    NA    NA
+2.280698E-11    0.457343000    NA    NA
+2.870484E-11    0.439507000    NA    NA
+3.695641E-11    0.414474000    NA    NA
+4.600000E-11    0.387105000    NA    NA
+5.000000E-11    0.375000000    NA    NA
+5.400000E-11    0.362895000    NA    NA
+6.304359E-11    0.335526000    NA    NA
+7.129516E-11    0.310493000    NA    NA
+7.719302E-11    0.292657000    NA    NA
+8.224776E-11    0.277652000    NA    NA
+8.665350E-11    0.265520000    NA    NA
+9.039844E-11    0.257173000    NA    NA
+9.394138E-11    0.252234000    NA    NA
+9.695638E-11    0.250454000    NA    NA
+1.000000E-10    0.250000000    NA    NA
+|
+|***************************************************************************
+|
+|                           Model Z_TDR_200ps  OUTPUT
+|
+|***************************************************************************
+[Model]     Z_TDR_200ps
+Model_type  Output
+Polarity    Non-Inverting
+Vmeas =0.125V
+Vref =0V
+Rref =50
+Cref =0pF
+|
+| variable                 typ                 min                 max
+C_comp                     0.0                 NA                  NA
+[Temperature Range]         50                 NA                  NA
+[Voltage range]            0.5                 NA                  NA
+|
+[Pullup]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V     0.01      NA        NA
+            1.0V    -0.02      NA        NA
+|
+[Pulldown]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V   -0.01      NA        NA
+            1.0V    0.02      NA        NA
+|
+[GND Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[POWER Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[ramp]
+| variable      typ         min       max
+dV/dt_r         0.15/120ps    NA        NA
+dV/dt_f         0.15/120ps    NA        NA
+|
+[Rising Waveform]
+R_fixture=      50.0000
+V_fixture=      0.0
+V_fixture_min=  0.0
+V_fixture_max=  0.0
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.000000000    NA    NA
+6.087245E-12    0.000453741    NA    NA
+1.211725E-11    0.002234500    NA    NA
+1.920312E-11    0.007172840    NA    NA
+2.669300E-11    0.015520400    NA    NA
+3.550448E-11    0.027651800    NA    NA
+4.561397E-11    0.042657500    NA    NA
+5.740969E-11    0.060492800    NA    NA
+7.391282E-11    0.085526300    NA    NA
+9.200000E-11    0.112894834    NA    NA
+1.000000E-10    0.125000000    NA    NA
+1.080000E-10    0.137105166    NA    NA
+1.260872E-10    0.164473700    NA    NA
+1.425903E-10    0.189507200    NA    NA
+1.543860E-10    0.207342500    NA    NA
+1.644955E-10    0.222348200    NA    NA
+1.733070E-10    0.234479600    NA    NA
+1.807969E-10    0.242827160    NA    NA
+1.878828E-10    0.247765500    NA    NA
+1.939128E-10    0.249546259    NA    NA
+2.000000E-10    0.250000000    NA    NA
+|
+[Falling Waveform]
+R_fixture=      50.0000
+V_fixture=      0.5
+V_fixture_min=  0.5
+V_fixture_max=  0.5
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.500000000    NA    NA
+6.087245E-12    0.499546000    NA    NA
+1.211725E-11    0.497766000    NA    NA
+1.920312E-11    0.492827000    NA    NA
+2.669300E-11    0.484480000    NA    NA
+3.550448E-11    0.472348000    NA    NA
+4.561397E-11    0.457343000    NA    NA
+5.740969E-11    0.439507000    NA    NA
+7.391282E-11    0.414474000    NA    NA
+9.200000E-11    0.387105000    NA    NA
+1.000000E-10    0.375000000    NA    NA
+1.080000E-10    0.362895000    NA    NA
+1.260872E-10    0.335526000    NA    NA
+1.425903E-10    0.310493000    NA    NA
+1.543860E-10    0.292657000    NA    NA
+1.644955E-10    0.277652000    NA    NA
+1.733070E-10    0.265520000    NA    NA
+1.807969E-10    0.257173000    NA    NA
+1.878828E-10    0.252234000    NA    NA
+1.939128E-10    0.250454000    NA    NA
+2.000000E-10    0.250000000    NA    NA
+|
+|***************************************************************************
+|
+|                           Model Z_TDR_500ps  OUTPUT
+|
+|***************************************************************************
+[Model]     Z_TDR_500ps
+Model_type  Output
+Polarity    Non-Inverting
+Vmeas =0.125V
+Vref =0V
+Rref =50
+Cref =0pF
+|
+| variable                 typ                 min                 max
+C_comp                     0.0                 NA                  NA
+[Temperature Range]         50                 NA                  NA
+[Voltage range]            0.5                 NA                  NA
+|
+[Pullup]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V     0.01      NA        NA
+            1.0V    -0.02      NA        NA
+|
+[Pulldown]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V   -0.01      NA        NA
+            1.0V    0.02      NA        NA
+|
+[GND Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[POWER Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[ramp]
+| variable      typ         min       max
+dV/dt_r         0.15/300ps    NA        NA
+dV/dt_f         0.15/300ps    NA        NA
+|
+[Rising Waveform]
+R_fixture=      50.0000
+V_fixture=      0.0
+V_fixture_min=  0.0
+V_fixture_max=  0.0
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.000000000    NA    NA
+1.521811E-11    0.000453741    NA    NA
+3.029312E-11    0.002234500    NA    NA
+4.800779E-11    0.007172840    NA    NA
+6.673249E-11    0.015520400    NA    NA
+8.876119E-11    0.027651800    NA    NA
+1.140349E-10    0.042657500    NA    NA
+1.435242E-10    0.060492800    NA    NA
+1.847821E-10    0.085526300    NA    NA
+2.300000E-10    0.112894834    NA    NA
+2.500000E-10    0.125000000    NA    NA
+2.700000E-10    0.137105166    NA    NA
+3.152179E-10    0.164473700    NA    NA
+3.564758E-10    0.189507200    NA    NA
+3.859651E-10    0.207342500    NA    NA
+4.112388E-10    0.222348200    NA    NA
+4.332675E-10    0.234479600    NA    NA
+4.519922E-10    0.242827160    NA    NA
+4.697069E-10    0.247765500    NA    NA
+4.847819E-10    0.249546259    NA    NA
+5.000000E-10    0.250000000    NA    NA
+|
+[Falling Waveform]
+R_fixture=      50.0000
+V_fixture=      0.5
+V_fixture_min=  0.5
+V_fixture_max=  0.5
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.500000000    NA    NA
+1.521811E-11    0.499546000    NA    NA
+3.029312E-11    0.497766000    NA    NA
+4.800779E-11    0.492827000    NA    NA
+6.673249E-11    0.484480000    NA    NA
+8.876119E-11    0.472348000    NA    NA
+1.140349E-10    0.457343000    NA    NA
+1.435242E-10    0.439507000    NA    NA
+1.847821E-10    0.414474000    NA    NA
+2.300000E-10    0.387105000    NA    NA
+2.500000E-10    0.375000000    NA    NA
+2.700000E-10    0.362895000    NA    NA
+3.152179E-10    0.335526000    NA    NA
+3.564758E-10    0.310493000    NA    NA
+3.859651E-10    0.292657000    NA    NA
+4.112388E-10    0.277652000    NA    NA
+4.332675E-10    0.265520000    NA    NA
+4.519922E-10    0.257173000    NA    NA
+4.697069E-10    0.252234000    NA    NA
+4.847819E-10    0.250454000    NA    NA
+5.000000E-10    0.250000000    NA    NA
+|
+|***************************************************************************
+|
+|                           Model Z_TDR_1000ps  OUTPUT
+|
+|***************************************************************************
+[Model]     Z_TDR_1000ps
+Model_type  Output
+Polarity    Non-Inverting
+Vmeas =0.125V
+Vref =0V
+Rref =50
+Cref =0pF
+|
+| variable                 typ                 min                 max
+C_comp                     0.0                 NA                  NA
+[Temperature Range]         50                 NA                  NA
+[Voltage range]            0.5                 NA                  NA
+|
+[Pullup]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V     0.01      NA        NA
+            1.0V    -0.02      NA        NA
+|
+[Pulldown]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V   -0.01      NA        NA
+            1.0V    0.02      NA        NA
+|
+[GND Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[POWER Clamp]
+|         Voltage   I(typ)    I(min)    I(max)
+           -0.5V    0         NA        NA
+            1.0V    0         NA        NA
+|
+[ramp]
+| variable      typ         min       max
+dV/dt_r         0.15/600ps    NA        NA
+dV/dt_f         0.15/600ps    NA        NA
+|
+[Rising Waveform]
+R_fixture=      50.0000
+V_fixture=      0.0
+V_fixture_min=  0.0
+V_fixture_max=  0.0
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.000000000    NA    NA
+3.043622E-11    0.000453741    NA    NA
+6.058624E-11    0.002234500    NA    NA
+9.601559E-11    0.007172840    NA    NA
+1.334650E-10    0.015520400    NA    NA
+1.775224E-10    0.027651800    NA    NA
+2.280698E-10    0.042657500    NA    NA
+2.870484E-10    0.060492800    NA    NA
+3.695641E-10    0.085526300    NA    NA
+4.600000E-10    0.112894834    NA    NA
+5.000000E-10    0.125000000    NA    NA
+5.400000E-10    0.137105166    NA    NA
+6.304359E-10    0.164473700    NA    NA
+7.129516E-10    0.189507200    NA    NA
+7.719302E-10    0.207342500    NA    NA
+8.224776E-10    0.222348200    NA    NA
+8.665350E-10    0.234479600    NA    NA
+9.039844E-10    0.242827160    NA    NA
+9.394138E-10    0.247765500    NA    NA
+9.695638E-10    0.249546259    NA    NA
+1.000000E-09    0.250000000    NA    NA
+|
+[Falling Waveform]
+R_fixture=      50.0000
+V_fixture=      0.5
+V_fixture_min=  0.5
+V_fixture_max=  0.5
+|time             V(typ)              V(min)              V(max)
+|
+0.000000E+00    0.500000000    NA    NA
+3.043622E-11    0.499546000    NA    NA
+6.058624E-11    0.497766000    NA    NA
+9.601559E-11    0.492827000    NA    NA
+1.334650E-10    0.484480000    NA    NA
+1.775224E-10    0.472348000    NA    NA
+2.280698E-10    0.457343000    NA    NA
+2.870484E-10    0.439507000    NA    NA
+3.695641E-10    0.414474000    NA    NA
+4.600000E-10    0.387105000    NA    NA
+5.000000E-10    0.375000000    NA    NA
+5.400000E-10    0.362895000    NA    NA
+6.304359E-10    0.335526000    NA    NA
+7.129516E-10    0.310493000    NA    NA
+7.719302E-10    0.292657000    NA    NA
+8.224776E-10    0.277652000    NA    NA
+8.665350E-10    0.265520000    NA    NA
+9.039844E-10    0.257173000    NA    NA
+9.394138E-10    0.252234000    NA    NA
+9.695638E-10    0.250454000    NA    NA
+1.000000E-09    0.250000000    NA    NA
+|
+|***************************************************************************
+[END]

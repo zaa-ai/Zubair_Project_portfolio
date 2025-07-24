@@ -1,0 +1,5 @@
+You can find, in the Qmix.yaml file, all the libraries needed to use the code. 
+There are 4 folders containing the codes necessary to do the analysis with Qmix,
+the difference between them is the design of the PCBs which are stored under the name of Design1.
+In each case, it is necessary to change the location of the data on the computer so 
+that the program can find the necessary documents. 

@@ -1,0 +1,6 @@
+training complete in 50641.944541692734 second
+training complete in 844.0324090282122 minutes
+training complete in 14.06720681713687 hours
+The most frequent state is (0, 0, 0, 0, 0, 0, 2, 0) which appears 102 times.
+The state with the best reward is (0, 0, 0, 0, 0, 0, 1, 0) with a reward of 9.75.
+PS C:\Users\emago\Documents\PI_MARL2_R> 

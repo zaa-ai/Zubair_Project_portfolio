@@ -1,0 +1,7 @@
+2024-05-21 00:08:05,028 INFO tune.py:1111 -- Total run time: 86201.41 seconds (86200.54 seconds for the tuning loop).
+training complete in 86206.15655636787 second
+training complete in 1436.7692759394645 minutes
+training complete in 23.946154598991075 hours
+The most frequent state is (0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1) which appears 7 times.
+The state with the best reward is (0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0) with a reward of 7.515706806282722.
+PS C:\Users\emago\Documents\PI_MARL_R> 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mask fMax="1000000000" Type="Impedance" fMin="200000" ZMin="4">
+  <Comment></Comment>
+</Mask>

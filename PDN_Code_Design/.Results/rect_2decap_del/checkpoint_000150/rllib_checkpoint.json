@@ -1,0 +1,1 @@
+{"type": "Algorithm", "checkpoint_version": "1.1", "format": "cloudpickle", "state_file": "C:\\Users\\emago\\ray_results\\QMIX\\QMIX_grouped_PCB_926fd_00000_0_2024-05-20_14-00-37\\checkpoint_000150\\algorithm_state.pkl", "policy_ids": ["pol2", "pol1"], "ray_version": "2.5.1", "ray_commit": "a03efd9931128d387649dd48b0e4864b43d3bfb4"}
