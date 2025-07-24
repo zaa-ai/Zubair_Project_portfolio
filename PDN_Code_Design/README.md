@@ -9,7 +9,7 @@
 
 ## 🚀 Overview
 
-This repository implements a QMIX-based Multi-Agent Reinforcement Learning (MARL) approach to automatically place decoupling capacitors on PCB Power Delivery Networks (PDNs), minimizing component count while satisfying impedance targets :contentReference[oaicite:0]{index=0}.
+This repository implements a QMIX-based Multi-Agent Reinforcement Learning (MARL) approach to automatically place decoupling capacitors on PCB Power Delivery Networks (PDNs), minimizing component count while satisfying impedance targets 
 
 ---
 
